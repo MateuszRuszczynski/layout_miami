@@ -1,7 +1,3 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@use './utils/reset.scss';
+@use './blocks/title.scss';
 
-body {
-  background: $c-gray;
-}
