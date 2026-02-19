@@ -44,38 +44,58 @@
       </h1>
     </header>
     <main class="main">
-      <h2 class="title title--secondary">Recommended</h2>
-      <section class="products">
-        <div class="products__wraper">
-          <img
-            class="photo products__image"
-            src="src/images/photos/Image-12.jpg"
-            alt="Bose portable Smart speaker"
-          />
-          <p class="products__name">Bose portable Smart speaker</p>
-          <p class="products__category">Smart home</p>
-          <p class="products__price">$ 399.00</p>
-        </div>
-        <div class="products__wraper">
-          <img
-            class="photo products__image"
-            src="src/images/photos/Image-11.jpg"
-            alt="SoundLink Flex Bluetooth speaker"
-          />
-          <p class="products__name">SoundLink Flex Bluetooth speaker</p>
-          <p class="products__category">Portable bluetooth</p>
-          <p class="products__price">$ 149.00</p>
-        </div>
-        <div class="products__wraper">
-          <img
-            class="photo products__image"
-            src="src/images/photos/Image-10.jpg"
-            alt="SoundLink Color Bluetooth speaker II"
-          />
-          <p class="products__name">SoundLink Color Bluetooth speaker II</p>
-          <p class="products__category">Portable bluetooth</p>
-          <p class="products__price">$ 129.00</p>
-        </div>
+      <section
+        class="products"
+        id="recommended"
+      >
+        <h2 class="products__title title title--secondary">Recommended</h2>
+
+        <ul class="products__list">
+          <li class="products__item">
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="src/images/photos/Image-12.jpg"
+                alt="Bose portable Smart speaker"
+              />
+              <h3 class="product-card__name">Bose portable Smart speaker</h3>
+              <p class="product-card__category">Smart home</p>
+              <p class="product-card__price">$ 399.00</p>
+            </article>
+          </li>
+
+          <li class="products__item">
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="src/images/photos/Image-11.jpg"
+                alt="SoundLink Flex Bluetooth speaker"
+              />
+              <h3 class="product-card__name">
+                SoundLink Flex Bluetooth speaker
+              </h3>
+              <p class="product-card__category">Portable bluetooth</p>
+              <p class="product-card__price">$ 149.00</p>
+            </article>
+          </li>
+
+          <li class="products__item">
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="src/images/photos/Image-10.jpg"
+                alt="SoundLink Color Bluetooth speaker II"
+              />
+              <h3 class="product-card__name">
+                SoundLink Color Bluetooth speaker II
+              </h3>
+              <p class="product-card__category">Portable bluetooth</p>
+              <p class="product-card__price product-card__price--no-margin">
+                $ 129.00
+              </p>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
   </body>

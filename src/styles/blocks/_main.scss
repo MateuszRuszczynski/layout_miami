@@ -3,49 +3,65 @@
 }
 
 .products {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.product-card {
 
   &__image {
-    align-self: auto;
     height: 280px;
     width: 280px;
-    box-sizing: border-box;
     margin-bottom: 32px;
   }
 
   &__name {
-    font-family: Inter, serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #292929;
   }
 
   &__category {
-    font-family: Inter, serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #292929;
+    margin-top: 7px;
+    margin-bottom: 12px;
   }
 
   &__price {
-    font-family: Inter, serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #292929;
-    margin-bottom: 40px;
+  }
+
+  &__price--no-margin {
+    margin-bottom: 0;
   }
 }
