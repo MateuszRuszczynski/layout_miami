@@ -1,0 +1,104 @@
+.contact-section {
+  margin-top: 96px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+
+.contact {
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__input,
+  &__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f8f8fa;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    padding: 14px 20px;
+    font-family: Inter, sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &__textarea {
+      height: 148px;
+      border-radius: 20px;
+      resize: vertical;
+    }
+
+    &::placeholder {
+      color: #7e7e83;
+      font-size: 14px;
+    }
+
+    &:hover {
+      border-color: rgba(213, 215, 222, 1);
+    }
+
+    &:focus {
+      border-color: rgba(41, 41, 41, 1);
+    }
+  }
+
+  &__label {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  &__button {
+    margin-top: 16px;
+    align-self: center;
+    width: 100%;
+    margin-bottom: 0;
+
+    &:hover {
+      background-color: white;
+      color: #292929;
+      border-color: #292929;
+    }
+  }
+}
+
+.address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__label {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9fadc2;
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #292929;
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    font-family: Inter, sans-serif;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
