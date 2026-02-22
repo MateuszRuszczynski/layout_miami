@@ -23,6 +23,16 @@
   }
 }
 
+@mixin visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .contact-section {
   margin-top: 96px;
 
@@ -50,20 +60,16 @@
 
   &__textarea {
     @include form-styles;
-    
+
     height: 148px;
     border-radius: 20px;
     resize: vertical;
   }
 
   &__label {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+    &:not(:focus, :active){
+      @include visually-hidden;
+    }
   }
 
   &__button {
@@ -71,6 +77,7 @@
     align-self: center;
     width: 100%;
     margin-bottom: 0;
+    max-width: 280px;
 
     &:hover {
       background-color: white;
