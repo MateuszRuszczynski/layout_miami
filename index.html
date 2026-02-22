@@ -32,16 +32,55 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="header__wave"
-        src="src/images/waves.svg"
-        alt="waves"
-      />
-      <h1 class="title header__title">
-        The world shades.
-        <br />
-        Your music shines.
-      </h1>
+      <nav class="navigation">
+        <a href="#header">
+          <img
+            class="navigation__logo"
+            src="src/images/Logo.svg"
+            alt="BOSE logo"
+          />
+        </a>
+        <div class="navigation__buttons">
+          <div class="navigation__buttons--phone-hover">
+            <a href="tel: +1 234 555-55-55">
+              <img
+                class="navigation__buttons--phone"
+                src="src/images/phone.svg"
+                alt="Contacts"
+              />
+            </a>
+            <div class="navigation__buttons--phone-number">
+              +1 234 555-55-55
+            </div>
+          </div>
+          <div class="navigation__buttons--burger-container">
+            <a href="#menu">
+              <img
+                class="navigation__buttons--burger"
+                src="src/images/burger.svg"
+                alt="Menu"
+              />
+              <img
+                class="navigation__buttons--burger-hover"
+                src="src/images/open_burger.svg"
+                alt="Menu"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__items">
+        <img
+          class="header__wave"
+          src="src/images/waves.svg"
+          alt="waves"
+        />
+        <h1 class="title header__title">
+          The world shades.
+          <br />
+          Your music shines.
+        </h1>
+      </div>
     </header>
     <main class="main">
       <section
