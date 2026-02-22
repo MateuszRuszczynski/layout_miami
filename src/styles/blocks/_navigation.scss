@@ -1,0 +1,87 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  box-sizing: border-box;
+
+  &__logo {
+    display: block;
+    width: 125px;
+    height: 16px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 24px;
+
+    &--phone {
+      &:hover {
+        .navigation__phone-number {
+          visibility: visible;
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &--burger {
+      &:hover {
+        .navigation__icon--burger-default {
+          display: none;
+        }
+        .navigation__icon--burger-hover {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+
+    &--burger-hover {
+      display: none;
+    }
+  }
+
+  &__phone-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__phone-number {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #292929;
+    white-space: nowrap;
+
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      opacity 300ms ease-in-out,
+      transform 300ms ease-in-out,
+      visibility 300ms;
+
+    pointer-events: none; 
+  }
+}

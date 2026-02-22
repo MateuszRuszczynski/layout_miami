@@ -33,37 +33,46 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <a href="#header">
+        <a
+          href="#header"
+          class="navigation__logo-link"
+        >
           <img
             class="navigation__logo"
             src="src/images/Logo.svg"
             alt="BOSE logo"
           />
         </a>
+
         <div class="navigation__buttons">
-          <div class="navigation__buttons--phone-hover">
-            <a href="tel: +1 234 555-55-55">
+          <div class="navigation__group navigation__group--phone">
+            <a
+              href="tel:+12345555555"
+              class="navigation__phone-link"
+            >
               <img
-                class="navigation__buttons--phone"
+                class="navigation__icon"
                 src="src/images/phone.svg"
                 alt="Contacts"
               />
+              <span class="navigation__phone-number">+1 234 555-55-55</span>
             </a>
-            <div class="navigation__buttons--phone-number">
-              +1 234 555-55-55
-            </div>
           </div>
-          <div class="navigation__buttons--burger-container">
-            <a href="#menu">
+
+          <div class="navigation__group navigation__group--burger">
+            <a
+              href="#menu"
+              class="navigation__burger-link"
+            >
               <img
-                class="navigation__buttons--burger"
+                class="navigation__icon navigation__icon--burger-default"
                 src="src/images/burger.svg"
-                alt="Menu"
+                alt="Open menu"
               />
               <img
-                class="navigation__buttons--burger-hover"
+                class="navigation__icon navigation__icon--burger-hover"
                 src="src/images/open_burger.svg"
-                alt="Menu"
+                alt="Menu icon hover"
               />
             </a>
           </div>
