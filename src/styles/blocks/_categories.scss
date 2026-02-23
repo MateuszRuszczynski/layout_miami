@@ -1,9 +1,12 @@
 @use '../utils/variables' as *;
 
 .categories {
-  &__heading {
-    margin-top: 96px;
-    margin-bottom: 48px;
+  margin-bottom: 96px;
+  margin-top: 96px;
+
+  @media (min-width: $page_width_medium) {
+    margin-bottom: 120px;
+    margin-top: 120px;
   }
 
   &__list {
@@ -90,5 +93,12 @@
     line-height: 140%;
     margin-top: 16px;
     color: #292929;
+    @media (min-width: $page_width_medium) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $page_width_large) {
+      font-size: 24px;
+    }
   }
 }
