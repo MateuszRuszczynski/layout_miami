@@ -12,6 +12,7 @@
     display: block;
     width: 125px;
     height: 16px;
+    
     @media (min-width: $page_width_medium) {
       width: 188px;
       height: 24px;
@@ -27,7 +28,7 @@
     display: block;
     width: 24px;
     height: 24px;
-    
+
     @media (min-width: $page_width_medium) {
       width: 32px;
       height: 32px;
