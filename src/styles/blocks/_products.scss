@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .main {
   padding: 64px 20px 0;
 }
@@ -5,6 +7,13 @@
 .products {
   &__title {
     margin-bottom: 40px;
+    @media (min-width: $page_width_medium) {
+      font-size: 40px;
+    }
+
+    @media (min-width: $page_width_large) {
+      font-size: 48px;
+    }
   }
 
   &__list {
