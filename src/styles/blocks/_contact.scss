@@ -46,10 +46,31 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    justify-content: center;
+
+    @media (min-width: $page_width_medium) {
+      display: grid;
+      grid-template-columns: repeat(6, 80px);
+      gap: 24px;
+    }
+
+    @media (min-width: $page_width_large) {
+      grid-template-columns: repeat(12, 63px);
+    }
   }
 }
 
 .contact {
+  @media (min-width: $page_width_medium) {
+    grid-column: 1 / 4;
+    justify-self: center;
+    width: 100%;
+  }
+
+  @media (min-width: $page_width_large) {
+    grid-column: 1 / 7;
+  }
+
   &__title {
     margin-bottom: 48px;
   }
@@ -58,38 +79,56 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
   }
 
-  &__input {
-    @include form-styles;
+  &__item {
+    width: 100%;
+  }
+
+  &__input,
+  &__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f8f8fa;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    padding: 14px 20px;
+    font-family: Inter, sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: #7e7e83;
+      font-size: 14px;
+    }
+
+    &:hover {
+      border-color: #d5d7de;
+    }
+
+    &:focus {
+      border-color: #292929;
+    }
   }
 
   &__textarea {
-    @include form-styles;
-
     height: 148px;
     border-radius: 20px;
     resize: vertical;
   }
 
   &__label {
-    &:not(:focus, :active){
-      @include visually-hidden;
-    }
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   &__button {
-    margin-top: 16px;
-    align-self: center;
+    margin-top: 24px;
     width: 100%;
-    margin-bottom: 0;
-    max-width: 280px;
-
-    &:hover {
-      background-color: white;
-      color: #292929;
-      border-color: #292929;
-    }
+    height: 56px;
+    align-self: flex-start;
   }
 }
 
@@ -99,9 +138,15 @@
   flex-direction: column;
   gap: 24px;
 
+  @media (min-width: $page_width_medium) {
+    grid-column: 4 / 7;
+  }
+
+  @media (min-width: $page_width_large) {
+    grid-column: 8 / 13;
+  }
+
   &__label {
-    font-family: Inter, sans-serif;
-    font-weight: 400;
     font-size: 14px;
     color: #9fadc2;
     margin-bottom: 8px;
@@ -113,7 +158,6 @@
     font-size: 16px;
     line-height: 1.5;
     display: block;
-    font-family: Inter, sans-serif;
 
     &:hover {
       text-decoration: underline;

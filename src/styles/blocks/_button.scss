@@ -19,9 +19,8 @@
   color: white;
   border: 3px solid #292929;
   transition: all 300ms ease;
- 
-  &--primary {
 
+  &--primary {
     @media (min-width: $page_width_medium) {
       width: 392px;
     }

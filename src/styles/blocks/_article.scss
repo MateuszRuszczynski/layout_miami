@@ -3,14 +3,12 @@
 .article {
   @media (min-width: $page_width_medium) {
     display: grid;
-    // Siatka 6 kolumn po 80px + gap 24px
     grid-template-columns: repeat(6, 80px);
     gap: 24px;
     justify-content: center;
   }
 
   @media (min-width: $page_width_large) {
-    // Siatka 12 kolumn po 63px + gap 24px
     grid-template-columns: repeat(12, 63px);
     gap: 24px;
   }
@@ -20,24 +18,21 @@
     text-align: left;
 
     @media (min-width: $page_width_medium) {
-      grid-column: span 3; // Zajmuje połowę (3 z 6 kolumn)
-      margin-bottom: 0;
+      grid-column: span 3;
     }
 
     @media (min-width: $page_width_large) {
-      grid-column: span 5; // Zajmuje lewą stronę (5 z 12 kolumn)
+      grid-column: span 5;
     }
   }
 
   &__content {
-    // Warto dodać kontener w HTML wokół listy i tekstu,
-    // aby łatwo ustawić je po prawej stronie siatki
     @media (min-width: $page_width_medium) {
-      grid-column: 4 / -1; // Zaczyna od 4 kolumny do końca
+      grid-column: 4 / -1;
     }
 
     @media (min-width: $page_width_large) {
-      grid-column: 7 / -1; // Zaczyna od 7 kolumny (zostawia lukę na środku)
+      grid-column: 7 / -1;
     }
   }
 
@@ -62,7 +57,8 @@
     line-height: 170%;
     margin-top: 40px;
     color: #292929;
-    max-width: 450px; // Ograniczenie szerokości tekstu dla lepszej czytelności
+    max-width: 450px;
   }
 }
+
 

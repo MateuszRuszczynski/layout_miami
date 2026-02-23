@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .footer {
   background-image: url(../../../src/images/photos/Image-9.jpg);
   background-repeat: no-repeat;
@@ -6,4 +8,12 @@
   min-height: 200px;
   width: 100%;
   margin-top: 96px;
+
+  @media (min-width: $page_width_medium) {
+    height: 400px;
+  }
+
+  @media (min-width: $page_width_large) {
+    height: 460px;
+  }
 }
