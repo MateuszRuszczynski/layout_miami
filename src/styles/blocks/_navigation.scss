@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -10,15 +12,34 @@
     display: block;
     width: 125px;
     height: 16px;
+    @media (min-width: $page_width_medium) {
+      width: 188px;
+      height: 24px;
+    }
+
+    @media (min-width: $page_width_large) {
+      width: 188px;
+      height: 24px;
+    }
   }
 
   &__icon {
     display: block;
     width: 24px;
     height: 24px;
+    
+    @media (min-width: $page_width_medium) {
+      width: 32px;
+      height: 32px;
+    }
+
+    @media (min-width: $page_width_large) {
+      width: 32px;
+      height: 32px;
+    }
 
     &--burger-hover {
-      display: none; 
+      display: none;
     }
   }
 
