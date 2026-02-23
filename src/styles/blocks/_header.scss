@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .header {
   min-height: 100vh;
   max-height: 500px;
@@ -16,5 +18,17 @@
     width: 48px;
     height: 58px;
     margin-bottom: 16px;
+
+    @media (min-width: $page_width_medium) {
+      margin-bottom: 40px;
+      width: 63px;
+      height: 76px;
+    }
+
+    @media (min-width: $page_width_large) {
+      margin-bottom: 32px;
+      width: 63px;
+      height: 76px;
+    }
   }
 }
