@@ -2,7 +2,6 @@
 
 .header {
   min-height: 100vh;
-  max-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +11,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $page_width_medium) {
+    background-size: cover;
+    background-image: url('/src/images/photos/bg_medium.jpg');
+  }
+
+  @media (min-width: $page_width_large) {
+    padding-bottom: 64px;
+    background-size: cover;
+    background-image: url('/src/images/photos/bg_full.jpg');
+  }
 
   &__wave {
     color: rgba(41, 41, 41, 1);
