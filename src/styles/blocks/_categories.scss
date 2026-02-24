@@ -82,7 +82,7 @@
     }
 
     &:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
   }
 
@@ -93,7 +93,7 @@
     line-height: 140%;
     margin-top: 16px;
     color: #292929;
-    
+
     @media (min-width: $page_width_medium) {
       font-size: 24px;
     }
