@@ -3,18 +3,18 @@
 .article {
   @media (min-width: $page_width_medium) {
     display: grid;
-    grid-template-columns: repeat(6, 80px);
-    gap: 24px;
+    grid-template-columns: $columns_medium;
+    gap: $gap_medium;
     justify-content: center;
   }
 
   @media (min-width: $page_width_large) {
-    grid-template-columns: repeat(12, 63px);
-    gap: 24px;
+    grid-template-columns: $columns_large;
+    gap: $gap_medium;
   }
 
   &__title {
-    margin-bottom: 32px;
+    margin-bottom: $margin_small;
     text-align: left;
 
     @media (min-width: $page_width_medium) {
@@ -48,7 +48,7 @@
     font-weight: 700;
     line-height: 140%;
     margin-bottom: 16px;
-    color: #292929;
+    color: $main_color;
   }
 
   &__text {
@@ -56,7 +56,7 @@
     font-size: 16px;
     line-height: 170%;
     margin-top: 40px;
-    color: #292929;
+    color: $main_color;
     max-width: 450px;
   }
 }

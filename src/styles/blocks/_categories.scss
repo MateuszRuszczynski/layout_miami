@@ -5,8 +5,8 @@
   margin-top: 96px;
 
   @media (min-width: $page_width_medium) {
-    margin-bottom: 120px;
-    margin-top: 120px;
+    margin-bottom: $margin_large;
+    margin-top: $margin_large;
   }
 
   &__list {
@@ -21,14 +21,14 @@
 
     @media (min-width: $page_width_medium) {
       display: grid;
-      grid-template-columns: repeat(6, 80px);
-      gap: 24px;
+      grid-template-columns: $columns_medium;
+      gap: $gap_medium;
       justify-content: center;
     }
 
     @media (min-width: $page_width_large) {
-      grid-template-columns: repeat(12, 63px);
-      gap: 24px;
+      grid-template-columns: $columns_large;
+      gap: $gap_medium;
     }
   }
 
@@ -55,13 +55,13 @@
 
   &__images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: $columns_small;
+    gap: $gap_small;
     justify-content: center;
 
     @media (min-width: $page_width_medium) {
       grid-template-columns: 2fr 1fr;
-      gap: 24px;
+      gap: $gap_medium;
 
       .categories__item:nth-child(even) & {
         grid-template-columns: 1fr 2fr;
@@ -70,11 +70,11 @@
   }
 
   &__image {
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 300ms ease;
+    transition: $trans_values;
 
     @media (min-width: $page_width_medium) {
       width: 100%;
@@ -92,7 +92,7 @@
     font-weight: 700;
     line-height: 140%;
     margin-top: 16px;
-    color: #292929;
+    color: $main_color;
 
     @media (min-width: $page_width_medium) {
       font-size: 24px;

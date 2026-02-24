@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #292929;
+  background-color: $main_color;
   width: 280px;
   height: 56px;
   margin: 0 auto;
@@ -17,8 +17,8 @@
   text-underline-position: from-font;
   text-decoration: none;
   color: white;
-  border: 3px solid #292929;
-  transition: all 300ms ease;
+  border: 3px solid $main_color;
+  transition: $trans_values;
 
   &--primary {
     @media (min-width: $page_width_medium) {
@@ -32,7 +32,7 @@
 
   &:hover {
     background-color: white;
-    color: #292929;
-    border-color: #292929;
+    color: $main_color;
+    border-color: $main_color;
   }
 }
