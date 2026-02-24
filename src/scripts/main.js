@@ -1,1 +1,11 @@
-'use strict';
+const handleMenuScroll = () => {
+  if (window.location.hash === '#menu') {
+    document.body.classList.add('page__body--with-menu');
+  } else {
+    document.body.classList.remove('page__body--with-menu');
+  }
+};
+
+window.addEventListener('hashchange', handleMenuScroll);
+
+handleMenuScroll();
