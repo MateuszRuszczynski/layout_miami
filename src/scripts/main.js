@@ -9,3 +9,26 @@ const handleMenuScroll = () => {
 window.addEventListener('hashchange', handleMenuScroll);
 
 handleMenuScroll();
+
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    // const submitBtn = contactForm.querySelector('.contact__button');
+    // submitBtn.textContent = 'Message sent!';
+    // submitBtn.style.backgroundColor = '#292929';
+    // submitBtn.style.color = '#ffffff';
+    // submitBtn.disabled = true;
+    // contactForm.reset();
+    const contactContainer = document.querySelector('.contact');
+    contactContainer.innerHTML = `
+    <div style="text-align: left; animation: fadeIn 0.5s;">
+      <h2 class="title">Thank you!</h2>
+      <p style="font-family: Inter, sans-serif; margin-top: 10px;">
+        Your message has been sent. We will get back to you soon.
+      </p>
+    </div>
+  `;
+  });
+}
