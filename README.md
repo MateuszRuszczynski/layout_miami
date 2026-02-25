@@ -4,7 +4,7 @@ A modern, responsive landing page for high-end audio products, featuring a sleek
 
 ## 🌐 Live Preview
 
-* **Demo:** [TU WKLEJ LINK DO TWOJEJ STRONY]
+* **Demo:** https://mateuszruszczynski.github.io/layout_miami
 * **Layout:** https://www.figma.com/design/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?node-id=6703-88&p=f&t=fRh8fbS5vT6bQSZu-0
 
 ---
