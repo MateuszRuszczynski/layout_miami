@@ -1,15 +1,47 @@
-# Miami landing page
+# Bose - Premium Headphones Landing Page
 
-In this task, you will learn how to implement a landing page. To do that:
+A modern, responsive landing page for high-end audio products, featuring a sleek design and smooth user experience. This project was built to demonstrate clean SCSS architecture, BEM methodology, and modern JavaScript integration.
 
-- choose a landing page design from the list below;
-  - [BOSE landing](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6703-88&t=L7eKz5YKLN0m5WxR-0)
-  - [MET landing](https://www.figma.com/file/lSR1m42L9YwzQwzzxKwHpw/THE-MET)
-  - [MYBIKE landing](https://www.figma.com/file/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0%3A1)
-  - [B&O](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6817-212&t=ZTV6Gl8NzaWkJ4FK-0)
-  - [Nothing](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6802-139&t=L7eKz5YKLN0m5WxR-0)
-- watch the lesson videos and implement your page blocks similarly to the videos;
-- **DON'T** try to do it `Pixel Perfect` - implement it the most `simple` way so it looks similar;
-- when you finish the first block of your page deploy it and create a Pull Request with a [DEMO LINK](https://<your_account>.github.io/layout_miami/) 
-- after each next block do the same (add, commit and push the changes, and deploy the updated demo;
-- check yourself using the [CHECKLIST](https://github.com/mate-academy/layout_miami/blob/master/checklist.md) when finished;
+## 🌐 Live Preview
+
+* **Demo:** [TU WKLEJ LINK DO TWOJEJ STRONY]
+* **Layout:** https://www.figma.com/design/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?node-id=6703-88&p=f&t=fRh8fbS5vT6bQSZu-0
+
+---
+
+## 🛠 Technologies Used
+
+* **HTML5** – Semantic structure for better SEO and accessibility.
+* **SCSS (Sass)** – Modular architecture using mixins, variables, and nesting.
+* **JavaScript (ES6+)** – Interactive elements and form handling.
+* **BEM Methodology** – Consistent and scalable naming convention.
+* **Vite** – Modern build tool for fast development and bundling.
+
+---
+
+## 🚀 Launching the Project
+
+Follow these steps to run the project locally:
+
+### 1. Prerequisites
+Make sure you have **Node.js** installed on your machine.
+
+### 2. Installation
+Clone the repository and install dependencies:
+```bash
+git clone https://github.com/MateuszRuszczynski/layout_miami
+npm install
+npm start
+
+The project will be available at http://localhost:5173.
+
+✨ Key Features
+Responsive Web Design (RWD): Fully optimized for mobile, tablet, and desktop views.
+Interactive Mobile Menu: Custom navigation with scroll-lock functionality on the body.
+Form Handling: Implemented preventDefault() to handle contact form submissions without page reloads, preventing 404 errors.
+Modern UI: High-fidelity implementation based on professional layouts with smooth hover effects and transitions.
+
+📁 Project Structure
+src/styles/ – SCSS files divided into utils (variables/mixins) and components.
+src/scripts/ – JavaScript modules for interactivity.
+index.html – Main entry point.
