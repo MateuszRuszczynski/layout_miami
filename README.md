@@ -37,11 +37,14 @@ The project will be available at http://localhost:5173.
 
 ## ✨ Key Features
 Responsive Web Design (RWD): Fully optimized for mobile, tablet, and desktop views.
+
 Interactive Mobile Menu: Custom navigation with scroll-lock functionality on the body.
+
 Form Handling: Implemented preventDefault() to handle contact form submissions without page reloads, preventing 404 errors.
+
 Modern UI: High-fidelity implementation based on professional layouts with smooth hover effects and transitions.
 
 ## 📁 Project Structure
-src/styles/ – SCSS files divided into utils (variables/mixins) and components.
-src/scripts/ – JavaScript modules for interactivity.
-index.html – Main entry point.
+* **src/styles/** – SCSS files divided into utils (variables/mixins) and components.
+* **src/scripts/** – JavaScript modules for interactivity.
+* **index.html** – Main entry point.
