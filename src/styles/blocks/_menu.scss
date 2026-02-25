@@ -22,6 +22,14 @@
     height: 100%;
     padding: 28px 20px;
     box-sizing: border-box;
+
+    @media (min-width: $page_width_medium) {
+      padding: 36px 72px;
+    }
+
+    @media (min-width: $page_width_large) {
+      padding: 36px 120px;
+    }
   }
 
   &__header {
