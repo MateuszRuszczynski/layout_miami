@@ -15,12 +15,14 @@
   @media (min-width: $page_width_medium) {
     background-size: cover;
     background-image: url('/src/images/photos/bg_medium.jpg');
+    padding: 36px 72px 64px;
   }
 
   @media (min-width: $page_width_large) {
     padding-bottom: 64px;
     background-size: cover;
     background-image: url('/src/images/photos/bg_full.jpg');
+    padding: 36px 120px 64px;
   }
 
   &__wave {

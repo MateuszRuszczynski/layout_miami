@@ -26,8 +26,10 @@
 
   &__icon {
     display: block;
+    box-sizing: border-box;
     width: 24px;
     height: 24px;
+    padding: 3px;
 
     @media (min-width: $page_width_medium) {
       width: 32px;
@@ -74,6 +76,10 @@
     display: flex;
     align-items: center;
     gap: 24px;
+
+    @media (min-width: $page_width_medium) {
+      gap: 32px;
+    }
   }
 
   &__group {
