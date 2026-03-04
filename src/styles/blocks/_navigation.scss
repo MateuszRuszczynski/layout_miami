@@ -7,6 +7,15 @@
   box-sizing: border-box;
   transition: $trans_values;
 
+  &__logo-link {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    text-decoration: none;
+    line-height: 0;
+  }
+
   &__logo {
     display: block;
     width: 125px;
