@@ -25,13 +25,8 @@
     height: 18px;
 
     @media (min-width: $page_width_medium) {
-      width: 32px;
-      height: 32px;
-    }
-
-    @media (min-width: $page_width_large) {
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
     }
 
     &--burger-hover {
