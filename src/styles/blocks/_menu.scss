@@ -40,12 +40,12 @@
   }
 
   &__logo {
-    height: 16px;
-    width: auto;
+    height: auto;
+    width: 125px;
 
     @media (min-width: $page_width_medium) {
       width: 188px;
-      height: 24px;
+      height: auto;
     }
   }
 
